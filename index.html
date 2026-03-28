@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flair - Sponsorship Consulting</title>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  color: #2D2E2D;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.header .logo img {
+  height: 50px;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.header nav a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: none;
+  color: #2D2E2D;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.header nav a:hover {
+  color: #E8A990;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #2D2E2D;
+  transition: all 0.3s;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  min-height: 80vh;
+  align-items: stretch;
+}
+.hero-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 50px;
+  background: #fff;
+}
+.hero-text h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.2;
+  color: #2D2E2D;
+  margin-bottom: 5px;
+}
+.hero-text h1 span {
+  display: block;
+}
+.hero-text p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  margin: 25px 0 30px;
+}
+.btn-talk {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #A4B6B4;
+  color: #2D2E2D;
+  padding: 14px 35px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+  align-self: flex-start;
+}
+.btn-talk:hover {
+  background: #93a5a3;
+  transform: translateY(-1px);
+}
+.hero-image {
+  width: 60%;
+  background: url('images/img_001.jpg') center center / cover no-repeat;
+  min-height: 500px;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  gap: 50px;
+}
+.intro-image {
+  flex: 1;
+  min-height: 400px;
+}
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.intro-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.intro-text p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #2D2E2D;
+}
+
+/* BRUSH STROKE DIVIDER */
+.divider {
+  text-align: center;
+  padding: 10px 0;
+}
+.divider img {
+  height: 80px;
+  opacity: 0.7;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 60px 0 80px;
+  background: #fff;
+}
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.portfolio-header h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #2D2E2D;
+}
+.slider-container {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+  overflow: hidden;
+}
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 20px;
+}
+.slide-text {
+  width: 40%;
+  flex-shrink: 0;
+}
+.slide-text h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #2D2E2D;
+}
+.slide-text p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+}
+.btn-story {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: #2D2E2D;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn-story:hover {
+  background: #444;
+}
+.slide-media {
+  width: 60%;
+  flex-shrink: 0;
+}
+.slide-media img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+.slide-media .video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.slide-media .video-wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #2D2E2D;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.slider-arrow:hover {
+  background: #f5f5f5;
+}
+.slider-arrow.prev { left: 5px; }
+.slider-arrow.next { right: 5px; }
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+.slider-dots .dot.active {
+  background: #A4B6B4;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 80px 40px;
+  background: #f7f7f5;
+}
+.testimonials-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  min-height: 280px;
+}
+.testimonial-slide {
+  display: none;
+  animation: fadeIn 0.5s;
+}
+.testimonial-slide.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.testimonial-slide blockquote {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #2D2E2D;
+  margin-bottom: 25px;
+}
+.testimonial-slide .author {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2D2E2D;
+}
+.testimonial-slide .title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #777;
+  margin-top: 3px;
+}
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 35px;
+}
+.testimonial-dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+.testimonial-dots .dot.active {
+  background: #A4B6B4;
+}
+
+/* ABOUT */
+.about {
+  display: flex;
+  align-items: stretch;
+  min-height: 500px;
+}
+.about-image {
+  width: 45%;
+  position: relative;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-content {
+  width: 55%;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+}
+.about-content h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #2D2E2D;
+  margin-bottom: 5px;
+}
+.about-content .subtitle {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 25px;
+}
+.about-content p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.9;
+  color: #2D2E2D;
+}
+
+/* CONTACT */
+.contact {
+  background: #C5D5D1;
+  padding: 80px 40px;
+}
+.contact-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.contact-left {
+  flex: 1;
+}
+.contact-left h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #2D2E2D;
+  margin-bottom: 15px;
+}
+.contact-left p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #2D2E2D;
+}
+.contact-divider {
+  flex-shrink: 0;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-divider img {
+  height: 200px;
+  opacity: 0.6;
+}
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.contact-item img {
+  width: 28px;
+  height: 28px;
+  opacity: 0.7;
+}
+.contact-item .icon-svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.contact-item .icon-svg svg {
+  width: 100%;
+  height: 100%;
+  fill: #2D2E2D;
+  opacity: 0.7;
+}
+.contact-item a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #2D2E2D;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-item a:hover {
+  color: #555;
+}
+
+/* FOOTER */
+.footer {
+  background: #C5D5D1;
+  padding: 30px 40px 40px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+.footer .logo img {
+  height: 45px;
+  margin-bottom: 15px;
+}
+.footer .social a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.footer .social img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.footer .social img:hover {
+  opacity: 1;
+}
+.footer .copyright {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  color: #555;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .header {
+    padding: 12px 20px;
+  }
+  .header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .header nav.open {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .hero {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero-text {
+    width: 100%;
+    padding: 40px 25px;
+  }
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  .hero-image {
+    width: 100%;
+    min-height: 300px;
+  }
+  .intro {
+    flex-direction: column;
+    padding: 0 25px;
+    margin: 50px auto;
+    gap: 30px;
+  }
+  .intro-image {
+    min-height: 250px;
+  }
+  .slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .slide-text, .slide-media {
+    width: 100%;
+  }
+  .slide-media img {
+    height: 250px;
+  }
+  .slider-container {
+    padding: 0 40px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about-image, .about-content {
+    width: 100%;
+  }
+  .about-image {
+    min-height: 350px;
+  }
+  .about-content {
+    padding: 40px 25px;
+  }
+  .contact-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-divider {
+    display: none;
+  }
+  .contact-item {
+    justify-content: center;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <a href="#welcome" class="logo"><img src="images/img_000.png" alt="Flair"></a>
+  <button class="hamburger" onclick="document.querySelector('.header nav').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav>
+    <a href="#welcome">Welcome</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#about">About Donna</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="welcome">
+  <div class="hero-text">
+    <h1>
+      <span>Sponsorship</span>
+      <span>Consulting</span>
+    </h1>
+    <p>We work with nonprofit and charitable organizations to create sponsorship programs and find partners that align with their values. We also support businesses in maximizing their investment in corporate social responsibility.</p>
+    <a href="#contact" class="btn-talk">LET'S TALK</a>
+  </div>
+  <div class="hero-image" role="img" aria-label="Runners by mural"></div>
+</section>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="intro-image">
+    <img src="images/img_002.jpg" alt="Food and wine">
+  </div>
+  <div class="intro-text">
+    <p>As the founder of Flair, Donna Dixson brings integrity, authenticity and enthusiasm to every project. Detail oriented and results driven, she brings marketing savvy, creativity and a commitment to alignment into the challenging world of effective sponsorship relationships. Donna's extensive network of trusted colleagues add extra value, talent and experience to her work with clients.</p>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="divider">
+  <img src="images/img_003.png" alt="">
+</div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="slider-container">
+    <button class="slider-arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="slider-arrow next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- Slide 1: VMF -->
+      <div class="slide">
+        <div class="slide-text">
+          <h3>Vancouver Mural Festival, Manager, Sponsors and Partnerships</h3>
+          <p>VMF hired Flair in January 2019 to secure and manage sponsor and partner relationships. Donna doubled the number of sponsors, increased sales by 43% and 90% of sponsors said they were more than satisfied with their return on investment and Donna's communication throughout.</p>
+          <a href="#" class="btn-story">read full story</a>
+        </div>
+        <div class="slide-media">
+          <img src="images/portfolio_vmf.jpg" alt="Vancouver Mural Festival">
+        </div>
+      </div>
+
+      <!-- Slide 2: BC Hop Events -->
+      <div class="slide">
+        <div class="slide-text">
+          <h3>BC Hop Co Event Producer</h3>
+          <p>With just 53 days to pull it off, Donna created and produced the first BC Hop Fest in 2015. The objectives were clear - build important relationships to establish brand awareness within the craft beer industry. Donna went on to produce BeerBQ and BC Hop Fest in 2016, and BC Hop Fest in 2017.</p>
+          <a href="#" class="btn-story">read full story</a>
+        </div>
+        <div class="slide-media">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/A9QNRPqPOGo" title="BC Hop Fest" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: BC Hop Merchant -->
+      <div class="slide">
+        <div class="slide-text">
+          <h3>BC Hop Co Hop Merchant/Marketing and Media Relations</h3>
+          <p>BC Hop Co asked Flair to expand the scope of the contract to include marketing and promotion and work as a sales rep for the first processed hops that would be ready for distribution in March 2017. Donna helped create a sales process, built a database of customers and then introduce BC Hop Co hops to brewers across the country.</p>
+          <a href="#" class="btn-story">read full story</a>
+        </div>
+        <div class="slide-media">
+          <img src="images/portfolio_bchop_merchant.jpg" alt="BC Hop Co">
+        </div>
+      </div>
+
+      <!-- Slide 4: Fort Langley -->
+      <div class="slide">
+        <div class="slide-text">
+          <h3>Sponsorship Lead, Event Producer Fort Langley Beer + Food Festival</h3>
+          <p>In the fall of 2016, Flair was hired by Trading Post Brewing Company to execute their vision for a brand new event to be held at the Fort Langley National Historic Site that would celebrate local food, beer and the history of the region.</p>
+          <a href="#" class="btn-story">read full story</a>
+        </div>
+        <div class="slide-media">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/xTjqmIqQ8E0" title="Fort Langley Beer + Food Festival" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Chilliwack -->
+      <div class="slide">
+        <div class="slide-text">
+          <h3>Chilliwack Hospital &amp; Health Care Foundation (CHHCF)</h3>
+          <p>Donna was tasked with a mandate to set up and administrate a brand new organization, facilitate the development of a brand identity, engage community in a unique mandate around health promotion and implement a comprehensive marketing and communication strategy.</p>
+          <a href="#" class="btn-story">read full story</a>
+        </div>
+        <div class="slide-media">
+          <img src="images/portfolio_chilliwack.jpg" alt="Chilliwack Hospital">
+        </div>
+      </div>
+
+    </div>
+    <div class="slider-dots" id="sliderDots"></div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="divider">
+  <img src="images/img_003.png" alt="">
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="testimonials-inner">
+
+    <div class="testimonial-slide active">
+      <blockquote>"Donna is someone who instantly builds trust with whomever she meets. This intangible makes her super power (making sure all the pieces of complex sponsorship agreements are impeccably well managed) all the more powerful. Doing partnership and Sponsorship management for huge public events like ours is a huge task, but we are always sure she is up for the challenge."</blockquote>
+      <div class="author">Adrian Sinclair</div>
+      <div class="title">Director of Engagement, Vancouver Mural Festival</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Donna is detail-oriented and results-driven with an enthusiastic can-do attitude and endless source of positivity. Her professionalism is matched only by the passion and care she exudes for both her team and client/partners. She places a high value on relationships, which is evident in everything she does. It's always a pleasure to work with someone like Donna who brings both professionalism and smiles!"</blockquote>
+      <div class="author">Lisa Wong</div>
+      <div class="title">Marketing Manager, Vancouver Mural Festival</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Working with VMF, particularly Donna and team, has been a pleasure. Donna listened to what we were seeking to achieve and supported us in thinking outside the box. We didn't want to come on board as a traditional sponsor and through the 'Run the Murals' series we did just that. The VMF team was creative, hard working, and exemplified what a strong partnership team can accomplish."</blockquote>
+      <div class="author">Diana Etherington</div>
+      <div class="title">National Community Manager, MEC</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Working with Donna and the team at Vancouver Mural Festival made our involvement with the festival smooth, inspired and productive. With a hands-on approach, I felt supported through the process of creation and execution of our activation. Donna brings an effervescent attitude to her work and treats each interaction with intention. Her attention to detail and follow-through was essential to the realization of our project. We have worked with VMF for two festivals, and look forward to a third in 2020."</blockquote>
+      <div class="author">Brianna Locke</div>
+      <div class="title">Regional Coordinator &ndash; Public Engagement and Awareness, World Vision Canada</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Our Lush team really appreciated the commitment to the Vancouver Mural Festival teal understanding what we were trying to achieve with our participation in the festival. We felt very aligned as partners, loved working with their team of passionate creatives and were happy with the value and return on our investment. The Mt Pleasant Street Party itself was amazing and from the signing of our agreement to the final report, communication was excellent."</blockquote>
+      <div class="author">Johanna Molloy</div>
+      <div class="title">Sr Marketing Program Manager Brand Communications, LUSH</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Creative, inspiring and original are three words that come to mind when I think of Donna. Filled with passion and energy, I first met Donna as Barkerville Bella and that was just the tip of the talent iceberg! It's one thing to think up a marketing campaign, it's another to star in it and be completely responsible for driving results based on your active performance for 10,000 km! Congrats - you are awesome."</blockquote>
+      <div class="author">Nancy Arsenault</div>
+      <div class="title">Tourism Cafe Canada Managing Partner &amp; "Experience Gal"</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Our club participates in numerous rugby tournaments around the world annually. Without any hesitation I can say the Abbotsford 7's Rugby Tournament in which Donna Dixson and her Flair team (including Sarah Campbell along with Katrina and Rachel Bernard) were the main organizers/managers was the most efficiently operated. No detail was left undone by these consummate professionals."</blockquote>
+      <div class="author">Karl Fix</div>
+      <div class="title">President, Dog River Howlers Rugby Club</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Donna has made significant progress in helping us understand our customers and their needs. She has been able to design effective marketing strategies that match our abilities and budget."</blockquote>
+      <div class="author">Bruce Fatkin</div>
+      <div class="title">Market Manager, Abbotsford Farm &amp; Country Market</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"The energy and enthusiasm that Donna applies to her work is positively motivating and surpassed only by her commitment to success. Working with Donna is always a positive and professional experience."</blockquote>
+      <div class="author">Ken Becotte</div>
+      <div class="title">Executive Director, Oscar BC</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"I had the pleasure working with Donna Dixson in her role of Event Producer of the 1st Annual Fort Langley Beer + Food Festival. Donna was instrumental in laying the foundation for our wonderfully successful event which ran in May 2017. Donna jumped into the fray early in 2017 and enthusiastically applied her organizational skills, experience in Event Leadership, her wealth of connections and, quite simply was a rock in bringing the vision to life. Donna proved to be professional, energetic, flexible, adaptable and honest in providing her input. I recommend Donna highly."</blockquote>
+      <div class="author">John Reese</div>
+      <div class="title">Principal, Table Nine Coaching</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"Donna was amazing to collaborate with for our Fort Langley Beer and Food Festival! She is extremely organized, hard-working and had great ideas for our event. She followed through with all tasks, communicated excellently and always had a positive attitude. I'd highly recommend Donna for any event big or small!"</blockquote>
+      <div class="author">Lance Verhoeff</div>
+      <div class="title">General Manager, Trading Post Brewing</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <blockquote>"After working with Donna for the past two years, I have no hesitation whatsoever in highly recommending her for your very serious consideration for any leadership position she is seeking!"</blockquote>
+      <div class="author">Mel Folkman</div>
+      <div class="title">Board Member, CHHCF</div>
+    </div>
+
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-image">
+    <img src="images/img_005.jpg" alt="Donna Dixson">
+  </div>
+  <div class="about-content">
+    <h2>Donna Dixson</h2>
+    <div class="subtitle">Flair Founder</div>
+    <p>As the oldest of three children in a military family, Donna has always been outgoing and a natural leader. After a brief run as a TV news anchor, she bid farewell to the city and settled on a quintessential farm in rural Saskatchewan. There she raised four daughters, ran a successful bed and breakfast operation and organized her first major event, the Biggest Family Reunion in Saskatchewan. Donna's focus for the past 20 years has been to say "yes" to as many exciting opportunities as possible. She brings a broad network of friends and colleagues into everything she does and is passionate about living with purpose and integrity. Donna enjoys running and cycling in her English Bay neighborhood, yoga, cooking great food for family and friends and is dedicated to being the best she can be.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h2>Add some Flair to your business.</h2>
+      <p>It's always better to meet in person. Call or email Donna to set up lunch or coffee and Donna's buying!</p>
+    </div>
+    <div class="contact-divider">
+      <img src="images/img_003.png" alt="">
+    </div>
+    <div class="contact-right">
+      <div class="contact-item">
+        <div class="icon-svg"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+        <a href="mailto:DonnaD@doitwithflair.ca?subject=Inquiry%20From%20Website">DonnaD@doitwithflair.ca</a>
+      </div>
+      <div class="contact-item">
+        <div class="icon-svg"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div>
+        <a href="tel:604-614-2123">604-614-2123</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="logo"><img src="images/img_008.png" alt="Flair"></div>
+  <div class="social">
+    <a href="http://linkedin.com/in/DonnaDixson1" target="_blank" rel="noopener"><img src="images/img_009.png" alt="LinkedIn"></a>
+  </div>
+  <div class="copyright">&copy; 2019 by Flair</div>
+</footer>
+
+<script>
+// Portfolio Slider
+const sliderTrack = document.getElementById('sliderTrack');
+const slides = sliderTrack.querySelectorAll('.slide');
+const dotsContainer = document.getElementById('sliderDots');
+let currentSlide = 0;
+
+// Create dots
+slides.forEach((_, i) => {
+  const dot = document.createElement('button');
+  dot.className = 'dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+function goToSlide(n) {
+  currentSlide = n;
+  sliderTrack.style.transform = `translateX(-${n * 100}%)`;
+  dotsContainer.querySelectorAll('.dot').forEach((d, i) => {
+    d.classList.toggle('active', i === n);
+  });
+}
+
+function moveSlide(dir) {
+  let next = currentSlide + dir;
+  if (next < 0) next = slides.length - 1;
+  if (next >= slides.length) next = 0;
+  goToSlide(next);
+}
+
+// Testimonial Slider
+const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+const tDotsContainer = document.getElementById('testimonialDots');
+let currentTestimonial = 0;
+
+testimonialSlides.forEach((_, i) => {
+  const dot = document.createElement('button');
+  dot.className = 'dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', () => goToTestimonial(i));
+  tDotsContainer.appendChild(dot);
+});
+
+function goToTestimonial(n) {
+  currentTestimonial = n;
+  testimonialSlides.forEach((s, i) => {
+    s.classList.toggle('active', i === n);
+  });
+  tDotsContainer.querySelectorAll('.dot').forEach((d, i) => {
+    d.classList.toggle('active', i === n);
+  });
+}
+
+// Auto-advance testimonials every 6 seconds
+setInterval(() => {
+  let next = (currentTestimonial + 1) % testimonialSlides.length;
+  goToTestimonial(next);
+}, 6000);
+
+// Close mobile nav on link click
+document.querySelectorAll('.header nav a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelector('.header nav').classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
