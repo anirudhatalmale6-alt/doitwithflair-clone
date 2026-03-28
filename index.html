@@ -13,6 +13,7 @@ body {
   color: #2D2E2D;
   line-height: 1.7;
   overflow-x: hidden;
+  background: #CCDBD9;
 }
 
 /* HEADER */
@@ -20,15 +21,15 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #fff;
-  padding: 25px 50px;
+  background: #F2F2F2;
+  padding: 25px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 120px;
+  min-height: 140px;
 }
 .header .logo img {
-  height: 90px;
+  height: 95px;
 }
 .header nav {
   display: flex;
@@ -76,13 +77,13 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 60px 40px 60px 55px;
-  background: #fff;
+  background: #CCDBD9;
 }
 .hero-text h1 {
   font-family: 'Lora', 'Baskerville', Georgia, serif;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 1.2;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1.15;
   color: #2D2E2D;
   margin-bottom: 8px;
 }
@@ -118,8 +119,15 @@ body {
 }
 .hero-image {
   width: 60%;
-  background: url('images/img_001.jpg') center center / cover no-repeat;
-  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* INTRO */
@@ -127,9 +135,10 @@ body {
   display: flex;
   align-items: stretch;
   max-width: 1200px;
-  margin: 80px auto;
-  padding: 0 40px;
+  margin: 0 auto;
+  padding: 40px 40px;
   gap: 50px;
+  background: #CCDBD9;
 }
 .intro-image {
   flex: 1;
@@ -156,7 +165,8 @@ body {
 /* BRUSH STROKE DIVIDER */
 .divider {
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
+  background: transparent;
 }
 .divider img {
   height: 80px;
@@ -166,7 +176,7 @@ body {
 /* PORTFOLIO */
 .portfolio {
   padding: 60px 0 80px;
-  background: #fff;
+  background: #FFFFFF;
 }
 .portfolio-header {
   text-align: center;
@@ -303,7 +313,7 @@ body {
 /* TESTIMONIALS */
 .testimonials {
   padding: 80px 40px;
-  background: #f7f7f5;
+  background: #CCDBD9;
 }
 .testimonials-inner {
   max-width: 800px;
@@ -370,6 +380,7 @@ body {
   display: flex;
   align-items: stretch;
   min-height: 500px;
+  background: #FFFFFF;
 }
 .about-image {
   width: 45%;
@@ -534,7 +545,7 @@ body {
     top: 100%;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #F2F2F2;
     flex-direction: column;
     padding: 20px;
     gap: 15px;
@@ -559,12 +570,14 @@ body {
   }
   .hero-image {
     width: 100%;
-    min-height: 300px;
+  }
+  .hero-image img {
+    height: auto;
   }
   .intro {
     flex-direction: column;
-    padding: 0 25px;
-    margin: 50px auto;
+    padding: 20px 25px;
+    margin: 0 auto;
     gap: 30px;
   }
   .intro-image {
@@ -632,7 +645,9 @@ body {
     <p>We work with nonprofit and charitable organizations to create sponsorship programs and find partners that align with their values. We also support businesses in maximizing their investment in corporate social responsibility.</p>
     <a href="#contact" class="btn-talk">LET'S TALK</a>
   </div>
-  <div class="hero-image" role="img" aria-label="Runners by mural"></div>
+  <div class="hero-image">
+    <img src="images/img_001.jpg" alt="MEC Run the Murals VMF 2019 - Photo Credit: Gabriel Martin, Mural Artist: Bunnie Reiss">
+  </div>
 </section>
 
 <!-- INTRO -->

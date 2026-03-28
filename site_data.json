@@ -1,0 +1,705 @@
+{
+  "content": [
+    {
+      "tag": "span",
+      "text": "top of page",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 0,
+      "id": "",
+      "className": "mHZSwn"
+    },
+    {
+      "tag": "div",
+      "text": "Welcome\n\nPortfolio\n\nTestimonials\n\nAbout Donna\n\nContact Me",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 0,
+      "id": "",
+      "className": ""
+    },
+    {
+      "tag": "span",
+      "text": "Description",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 0,
+      "id": "",
+      "className": "mHZSwn"
+    },
+    {
+      "tag": "span",
+      "text": "About Me",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 0,
+      "id": "",
+      "className": "mHZSwn"
+    },
+    {
+      "tag": "span",
+      "text": "bottom of page",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 0,
+      "id": "",
+      "className": "mHZSwn"
+    },
+    {
+      "tag": "li",
+      "text": "Welcome",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 47,
+      "id": "DrpDwnMn0-1em0",
+      "className": "Tg1gOB wixui-dropdown-menu__item xTjc1A"
+    },
+    {
+      "tag": "li",
+      "text": "Portfolio",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 47,
+      "id": "DrpDwnMn0-1em1",
+      "className": "Tg1gOB wixui-dropdown-menu__item xTjc1A"
+    },
+    {
+      "tag": "li",
+      "text": "Testimonials",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 47,
+      "id": "DrpDwnMn0-1em2",
+      "className": "Tg1gOB wixui-dropdown-menu__item xTjc1A"
+    },
+    {
+      "tag": "li",
+      "text": "About Donna",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 47,
+      "id": "DrpDwnMn0-1em3",
+      "className": "Tg1gOB wixui-dropdown-menu__item xTjc1A"
+    },
+    {
+      "tag": "li",
+      "text": "Contact Me",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 47,
+      "id": "DrpDwnMn0-1em4",
+      "className": "Tg1gOB wixui-dropdown-menu__item xTjc1A"
+    },
+    {
+      "tag": "button",
+      "text": "Skip to Main Content",
+      "fontSize": "14px",
+      "fontFamily": "Helvetica, Arial, \u30e1\u30a4\u30ea\u30aa, meiryo, \"\u30d2\u30e9\u30ae\u30ce\u89d2\u30b4 pro w3\", \"hiragino kaku gothic pro\", sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(17, 109, 255)",
+      "bgColor": "rgb(255, 255, 255)",
+      "y": 60,
+      "id": "SKIP_TO_CONTENT_BTN",
+      "className": "SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus"
+    },
+    {
+      "tag": "div",
+      "text": "We work with nonprofit and charitable organizations\u00a0to create sponsorship programs\u00a0and find partners that align with their values. We also support businesses\u00a0in maximizing\u00a0their investment in corporate social responsibility.\nLET'S TALK\nSponsorship\nConsulting\nAs the founder of Flair, Donna Dixson brings\u00a0integrity, authenticity and enthusiasm to every project. Detail oriented and results driven, she brings marketing savvy, creativity\u00a0and a commitment to alignment into the challenging world of effe",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 145,
+      "id": "",
+      "className": ""
+    },
+    {
+      "tag": "div",
+      "text": "Sponsorship\nConsulting",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 189,
+      "id": "",
+      "className": ""
+    },
+    {
+      "tag": "h6",
+      "text": "Sponsorship",
+      "fontSize": "42px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 197,
+      "id": "",
+      "className": "font_6 wixui-rich-text__text"
+    },
+    {
+      "tag": "h6",
+      "text": "Consulting",
+      "fontSize": "42px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 249,
+      "id": "",
+      "className": "font_6 wixui-rich-text__text"
+    },
+    {
+      "tag": "a",
+      "text": "LET'S TALK",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 238)",
+      "bgColor": "rgb(164, 182, 180)",
+      "y": 549,
+      "id": "",
+      "className": "uDW_Qe wixui-button PlZyDq"
+    },
+    {
+      "tag": "div",
+      "text": "As the founder of Flair, Donna Dixson brings\u00a0integrity, authenticity and enthusiasm to every project. Detail oriented and results driven, she brings marketing savvy, creativity\u00a0and a commitment to alignment into the challenging world of effective sponsorship relationships. Donna's\u00a0extensive network of trusted colleagues add extra value, talent and experience to her work with clients.",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 712,
+      "id": "",
+      "className": "V5AUxf"
+    },
+    {
+      "tag": "div",
+      "text": "Vancouver Mural Festival, Manager, Sponsors\u00a0and Partnerships\n\nVMF\u00a0hired Flair in\u00a0 January 2019\u00a0to\u00a0secure and manage sponsor and partner relationships.\u00a0 Donna\u00a0doubled the number of sponsors, increased sales by 43% and 90% of sponsors said they were more than satisfied with their return on investment and Donna's communication throughout.\n\nread full story",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 1173,
+      "id": "",
+      "className": "hDJzl4"
+    },
+    {
+      "tag": "div",
+      "text": "Vancouver Mural Festival, Manager, Sponsors\u00a0and Partnerships",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 1254,
+      "id": "comp-kask4twj",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-kask4twj wixui-rich-text"
+    },
+    {
+      "tag": "div",
+      "text": "VMF\u00a0hired Flair in\u00a0 January 2019\u00a0to\u00a0secure and manage sponsor and partner relationships.\u00a0 Donna\u00a0doubled the number of sponsors, increased sales by 43% and 90% of sponsors said they were more than satisfied with their return on investment and Donna's communication throughout.",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 1354,
+      "id": "comp-kask4twu",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-kask4twu wixui-rich-text"
+    },
+    {
+      "tag": "span",
+      "text": "VMF",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 1354,
+      "id": "",
+      "className": "wixui-rich-text__text"
+    },
+    {
+      "tag": "span",
+      "text": "hired Flair in\u00a0 January 2019\u00a0to\u00a0secure and manage sponsor and partner relationships.\u00a0 Donna\u00a0doubled the number of sponsors, increased sales by 43% and 90% of sponsors said they were more than satisfied with their return on investment and Donna's communication throughout.",
+      "fontSize": "17px",
+      "fontFamily": "brandon-grot-w01-light, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 1354,
+      "id": "",
+      "className": "wixui-rich-text__text"
+    },
+    {
+      "tag": "a",
+      "text": "read full story",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgb(45, 46, 45)",
+      "y": 1607,
+      "id": "",
+      "className": "uDW_Qe wixui-button PlZyDq"
+    },
+    {
+      "tag": "div",
+      "text": "\"Donna is someone who instantly builds trust with whomever she meets. This intangible makes her super power (making sure all the pieces of complex sponsorship agreements are impeccably well managed) all the more powerful. Doing partnership and Sponsorship management for huge public events like ours is a huge task, but we are always sure she is up for the challenge.\"\n\u200b\n- Adrian Sinclair\u00a0Director of Engagement\n\u00a0Vancouver Mural Festival",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 1719,
+      "id": "",
+      "className": "hDJzl4"
+    },
+    {
+      "tag": "h6",
+      "text": "- Adrian Sinclair\u00a0Director of Engagement",
+      "fontSize": "16px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2070.625,
+      "id": "",
+      "className": "font_6 wixui-rich-text__text"
+    },
+    {
+      "tag": "span",
+      "text": "- Adrian Sinclair",
+      "fontSize": "16px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "700",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2070.625,
+      "id": "",
+      "className": "wixui-rich-text__text"
+    },
+    {
+      "tag": "span",
+      "text": "Director of Engagement",
+      "fontSize": "16px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "700",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2070.625,
+      "id": "",
+      "className": "wixui-rich-text__text"
+    },
+    {
+      "tag": "h6",
+      "text": "Vancouver Mural Festival",
+      "fontSize": "16px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2090.625,
+      "id": "",
+      "className": "font_6 wixui-rich-text__text"
+    },
+    {
+      "tag": "div",
+      "text": "Donna Dixson\nFlair Founder\n\nAs the oldest of three children in a military family, Donna has always been outgoing and a natural leader. After a brief run as a TV news anchor, she bid farewell to the city and settled on a quintessential farm in rural Saskatchewan. There she raised four daughters, ran a successful bed and breakfast operation and organized her first major event, the Biggest Family Reunion in Saskatchewan. \u00a0Donna's focus for the past 20 years has been to say \"yes\" to as many exciting",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2402,
+      "id": "",
+      "className": "V5AUxf"
+    },
+    {
+      "tag": "div",
+      "text": "Donna Dixson\nFlair Founder",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2549,
+      "id": "comp-jcs796ah",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-jcs796ah wixui-rich-text"
+    },
+    {
+      "tag": "h1",
+      "text": "Donna Dixson",
+      "fontSize": "25px",
+      "fontFamily": "wfont_914bd6_c876cb05ddd84eaaa2858b2298cc71c8, wf_c876cb05ddd84eaaa2858b229, orig_gothambold",
+      "fontWeight": "400",
+      "color": "rgb(255, 255, 255)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2549,
+      "id": "",
+      "className": "font_0 wixui-rich-text__text"
+    },
+    {
+      "tag": "h6",
+      "text": "Flair Founder",
+      "fontSize": "17px",
+      "fontFamily": "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "fontWeight": "400",
+      "color": "rgb(45, 46, 45)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2580,
+      "id": "",
+      "className": "font_6 wixui-rich-text__text"
+    },
+    {
+      "tag": "div",
+      "text": "As the oldest of three children in a military family, Donna has always been outgoing and a natural leader. After a brief run as a TV news anchor, she bid farewell to the city and settled on a quintessential farm in rural Saskatchewan. There she raised four daughters, ran a successful bed and breakfast operation and organized her first major event, the Biggest Family Reunion in Saskatchewan. \u00a0Donna's focus for the past 20 years has been to say \"yes\" to as many exciting opportunities as possible. ",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 2660,
+      "id": "comp-jcs7oddf",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-jcs7oddf wixui-rich-text"
+    },
+    {
+      "tag": "div",
+      "text": "Add some Flair to your business.\n\nIt\u2019s always better to meet in person. Call or email Donna to set up lunch or coffee and\u00a0Donna's buying!\n\nDonnaD@doitwithflair.ca\n604-614-2123",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 3061,
+      "id": "",
+      "className": "V5AUxf"
+    },
+    {
+      "tag": "div",
+      "text": "Add some Flair to your business.",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 3161,
+      "id": "comp-jd2cm8u2",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-jd2cm8u2 wixui-rich-text"
+    },
+    {
+      "tag": "div",
+      "text": "DonnaD@doitwithflair.ca",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 3206,
+      "id": "comp-jd0iyyc9",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-jd0iyyc9 wixui-rich-text"
+    },
+    {
+      "tag": "div",
+      "text": "It\u2019s always better to meet in person. Call or email Donna to set up lunch or coffee and\u00a0Donna's buying!",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 3286,
+      "id": "comp-jd2cnbjh",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-jd2cnbjh wixui-rich-text"
+    },
+    {
+      "tag": "div",
+      "text": "604-614-2123",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 3312,
+      "id": "comp-jd0jfsf2",
+      "className": "MMl86N zQ9jDz qvSjx3 Vq6kJx comp-jd0jfsf2 wixui-rich-text"
+    },
+    {
+      "tag": "div",
+      "text": "\u00a9 2018\u00a0by Flair",
+      "fontSize": "10px",
+      "fontFamily": "Arial, Helvetica, sans-serif",
+      "fontWeight": "400",
+      "color": "rgb(0, 0, 0)",
+      "bgColor": "rgba(0, 0, 0, 0)",
+      "y": 3467,
+      "id": "",
+      "className": ""
+    }
+  ],
+  "images": [
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_f859a681db034581a9e641942d249801~mv2.png/v1/fill/w_163,h_95,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_f859a681db034581a9e641942d249801~mv2.png",
+      "alt": "",
+      "width": 163,
+      "height": 95,
+      "y": 25
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/125d85_753bd2c346bf48988dd2df5f47a0caa6~mv2.jpg/v1/fill/w_768,h_572,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/125d85_753bd2c346bf48988dd2df5f47a0caa6~mv2.jpg",
+      "alt": "VancouverMuralFestival_MEC%2520Run%2520T",
+      "width": 768,
+      "height": 572,
+      "y": 101
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_3ca74bfe86d54eaf80771ed671ca66db~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_512,h_458,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_3ca74bfe86d54eaf80771ed671ca66db~mv2_d_3648_5472_s_4_2.jpg",
+      "alt": "",
+      "width": 512,
+      "height": 458,
+      "y": 712
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_4b67031d660347f38b67351cfefd807b~mv2.png/v1/fill/w_208,h_83,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_4b67031d660347f38b67351cfefd807b~mv2.png",
+      "alt": "",
+      "width": 208,
+      "height": 83,
+      "y": 757
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/125d85_2d5da6fb8c804bb6937c10d62bdc5acf~mv2.jpg/v1/crop/x_0,y_271,w_6016,h_3690/fill/w_555,h_340,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Copy%20of%20VancouverMuralFestival_VIP%20Galle.jpg",
+      "alt": "Copy of VancouverMuralFestival_VIP Galle",
+      "width": 555,
+      "height": 340,
+      "y": 1246
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/125d85_2af7d0f097f04487bb4befdebb6da02f~mv2.jpg/v1/crop/x_42,y_0,w_1597,h_1120/fill/w_479,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/125d85_2af7d0f097f04487bb4befdebb6da02f~mv2.jpg",
+      "alt": "",
+      "width": 479,
+      "height": 336,
+      "y": 2556
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_d3c071c225fd49d2b0097836de63304e~mv2.png/v1/fill/w_184,h_32,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_d3c071c225fd49d2b0097836de63304e~mv2.png",
+      "alt": "",
+      "width": 184,
+      "height": 32,
+      "y": 2617
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_1ddda636952f4803a15adc3041529e67~mv2.png/v1/fill/w_204,h_47,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_1ddda636952f4803a15adc3041529e67~mv2.png",
+      "alt": "",
+      "width": 204,
+      "height": 47,
+      "y": 3161.5
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_c482079c04f24af69bc180e3164f41a7~mv2.png/v1/fill/w_199,h_116,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_c482079c04f24af69bc180e3164f41a7~mv2.png",
+      "alt": "",
+      "width": 199,
+      "height": 116,
+      "y": 3496
+    },
+    {
+      "type": "img",
+      "src": "https://static.wixstatic.com/media/914bd6_86aed9bbdac34db29d8b081c00c9adcd~mv2.png/v1/fill/w_108,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914bd6_86aed9bbdac34db29d8b081c00c9adcd~mv2.png",
+      "alt": "",
+      "width": 108,
+      "height": 28,
+      "y": 3626
+    }
+  ],
+  "videos": [],
+  "navigation": [
+    {
+      "text": "Welcome",
+      "href": "https://www.doitwithflair.ca/",
+      "ariaLabel": ""
+    },
+    {
+      "text": "Portfolio",
+      "href": "https://www.doitwithflair.ca/",
+      "ariaLabel": ""
+    },
+    {
+      "text": "Testimonials",
+      "href": "https://www.doitwithflair.ca/",
+      "ariaLabel": ""
+    },
+    {
+      "text": "About Donna",
+      "href": "https://www.doitwithflair.ca/",
+      "ariaLabel": ""
+    },
+    {
+      "text": "Contact Me",
+      "href": "https://www.doitwithflair.ca/",
+      "ariaLabel": ""
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-kask4trw",
+      "ariaLabel": "Copy of Slide 4"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jd1zc0nl",
+      "ariaLabel": "Slide  1"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jdxlvjlo",
+      "ariaLabel": "Slide 2"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jdxnmyg7",
+      "ariaLabel": "Slide 3"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jdxorpbl",
+      "ariaLabel": "Slide 4"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-kaucfi00",
+      "ariaLabel": "Adrian"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jg32fa2c",
+      "ariaLabel": "Lisa"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-kaufqo83",
+      "ariaLabel": "Diana "
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-kaufyxn5",
+      "ariaLabel": "Brianna"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-kaufwp0i",
+      "ariaLabel": "Johanna"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jg31vn16",
+      "ariaLabel": "Nancy"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-je0d35sq",
+      "ariaLabel": "Karl"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-je0d1qlt",
+      "ariaLabel": "Bruce"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jg31vftx",
+      "ariaLabel": "Ken"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-jg32eljz",
+      "ariaLabel": "John"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-je0cu7bz",
+      "ariaLabel": "Lance"
+    },
+    {
+      "text": "",
+      "href": "https://www.doitwithflair.ca/#comp-je0d0dlf",
+      "ariaLabel": "Mel"
+    }
+  ],
+  "social": [
+    {
+      "text": "",
+      "href": "http://linkedin.com/in/DonnaDixson1"
+    }
+  ],
+  "styles": {
+    "textColors": [
+      "rgb(0, 0, 0)",
+      "rgb(17, 109, 255)",
+      "rgb(0, 0, 238)",
+      "rgb(27, 34, 47)",
+      "rgb(45, 46, 45)",
+      "rgb(242, 242, 242)",
+      "rgb(255, 255, 255)",
+      "rgb(63, 43, 33)"
+    ],
+    "bgColors": [
+      "rgb(255, 255, 255)",
+      "rgb(204, 219, 217)",
+      "rgb(242, 242, 242)",
+      "rgb(164, 182, 180)",
+      "rgb(137, 137, 137)",
+      "rgb(45, 46, 45)"
+    ],
+    "fonts": [
+      "Arial, Helvetica, sans-serif",
+      "Helvetica, Arial, \u30e1\u30a4\u30ea\u30aa, meiryo, \"\u30d2\u30e9\u30ae\u30ce\u89d2\u30b4 pro w3\", \"hiragino kaku gothic pro\", sans-serif",
+      "brandon-grot-w01-light, sans-serif",
+      "wfont_914bd6_c6c33dc985aa4a17834be034baff5bde, wf_c6c33dc985aa4a17834be034b, orig_baskerville_bt_roman",
+      "wfont_914bd6_c876cb05ddd84eaaa2858b2298cc71c8, wf_c876cb05ddd84eaaa2858b229, orig_gothambold",
+      "Arial",
+      "wfont_914bd6_a70cbca43795463081d0d34650f0b046, wf_a70cbca43795463081d0d3465, orig_baskerville_bt_roman",
+      "helvetica-w01-bold, helvetica-w02-bold, helvetica-lt-w10-bold, sans-serif",
+      "museo-slab-w01-100, serif"
+    ]
+  },
+  "totalHeight": 3701
+}
