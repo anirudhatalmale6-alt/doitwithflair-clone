@@ -134,15 +134,11 @@ body {
 .intro {
   display: flex;
   align-items: stretch;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 40px;
-  gap: 50px;
   background: #CCDBD9;
 }
 .intro-image {
-  flex: 1;
-  min-height: 400px;
+  width: 40%;
+  flex-shrink: 0;
 }
 .intro-image img {
   width: 100%;
@@ -151,15 +147,22 @@ body {
   display: block;
 }
 .intro-text {
-  flex: 1;
+  width: 60%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 80px 40px 60px;
+}
+.intro-text .brush-swirl {
+  width: 180px;
+  margin-bottom: 20px;
 }
 .intro-text p {
-  font-family: 'Lora', 'Baskerville', Georgia, serif;
-  font-size: 17px;
-  line-height: 1.9;
-  color: #2D2E2D;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.8;
+  color: #1B222F;
 }
 
 /* BRUSH STROKE DIVIDER */
@@ -576,12 +579,14 @@ body {
   }
   .intro {
     flex-direction: column;
-    padding: 20px 25px;
-    margin: 0 auto;
-    gap: 30px;
   }
   .intro-image {
+    width: 100%;
     min-height: 250px;
+  }
+  .intro-text {
+    width: 100%;
+    padding: 30px 25px;
   }
   .slide {
     grid-template-columns: 1fr;
@@ -656,6 +661,7 @@ body {
     <img src="images/img_002.jpg" alt="Food and wine">
   </div>
   <div class="intro-text">
+    <img src="images/brush_intro.png" alt="" class="brush-swirl">
     <p>As the founder of Flair, Donna Dixson brings integrity, authenticity and enthusiasm to every project. Detail oriented and results driven, she brings marketing savvy, creativity and a commitment to alignment into the challenging world of effective sponsorship relationships. Donna's extensive network of trusted colleagues add extra value, talent and experience to her work with clients.</p>
   </div>
 </section>
