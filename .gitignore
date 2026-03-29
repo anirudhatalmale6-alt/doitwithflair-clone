@@ -1,1 +1,8 @@
-screenshots\nsite_data.json\n*.py
+screenshots/
+site_data.json
+*.py
+images/wide_*.jpg
+images/fit_*.jpg
+images/original_full.jpg
+images/img_001_large.jpg
+images/img_001_wider.jpg
