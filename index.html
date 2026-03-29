@@ -585,15 +585,15 @@ body {
 }
 .story-header h3 {
   font-family: 'Libre Baskerville', Georgia, serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 22px;
   color: #2D2E2D;
   flex: 1;
 }
 .story-header .story-subtitle {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 400;
+  font-size: 20px;
   color: #2D2E2D;
   flex: 1;
   text-align: right;
@@ -604,8 +604,33 @@ body {
   margin-bottom: 20px;
   align-items: flex-start;
 }
-.story-body-row img {
-  width: 200px;
+.story-gallery {
+  width: 210px;
+  flex-shrink: 0;
+  position: relative;
+}
+.story-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.story-gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.story-gallery-nav button {
+  background: #ddd;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.story-gallery-nav button:hover {
+  background: #bbb;
+}
+.story-body-row > img {
+  width: 210px;
   height: auto;
   flex-shrink: 0;
 }
@@ -626,15 +651,12 @@ body {
   margin-bottom: 15px;
 }
 .story-bottom-images {
-  display: flex;
-  gap: 15px;
   margin-top: 20px;
 }
 .story-bottom-images img {
-  flex: 1;
-  max-width: 50%;
+  width: 100%;
   height: auto;
-  object-fit: cover;
+  display: block;
 }
 .story-nav-arrow {
   background: none;
@@ -1068,7 +1090,7 @@ const storyData = {
   vmf: {
     title: 'Sponsors & Partnerships',
     subtitle: 'Vancouver Mural Festival January 2019 to June 2020',
-    topImage: 'images/story_vmf_1.jpg',
+    galleryImages: ['images/story_vmf_1.jpg'],
     firstPara: 'Donna was thrilled to join the amazing group of change makers responsible for the Vancouver Mural Festival. Working closely with the Executive team, Donna was able to build upon previous relationships, secure new partners, develop systems, execute contracts, schedule meetings, identify opportunities, prepare presentations, and conduct follow up.',
     moreParagraphs: [
       'To ensure promised outcomes were achieved, Donna prioritized effective and consistent communication with sponsors and the VMF team. VMF and Flair entered into a new contract immediately after VMF 2019 with big plans for the 5th Anniversary in 2020. New colleague Lauren Welland and I started working together in early January and were well on the way to reaching very ambitious sales objectives for the year. Just prior to Covid decimating the event industry, 30% of the sponsorship agreements needed for 2020 were ready for signature with 20 NEW additional partners engaged and ready to move forward.'
@@ -1078,7 +1100,7 @@ const storyData = {
   bchop: {
     title: 'Event Producer',
     subtitle: 'BC Hop Co.\nAugust 2015 to Jan 2019',
-    topImage: 'images/story_2_1.jpg',
+    galleryImages: ['images/story_2_1.jpg', 'images/story_2_1b.jpg'],
     firstPara: 'As a new business, BC Hop Co approached Flair to produce a fresh hop beer festival on their farm in the Fraser Valley. With just 53 days from the first meeting to event execution, and no previous experience in the craft beer industry, Donna took on the challenge, achieved every objective outlined in the contract, and exceeded expectations for business development.',
     moreParagraphs: [
       'Capitalizing on her existing relationships and quickly creating new ones in the craft beer community, Donna recruited 17 craft breweries to participate, developed and executed 11 sponsorship agreements, generated extensive media coverage and 800 people attended the event. Three years later, the event tripled sponsorship, hosted 42 craft breweries, attracted 1500 attendees and was established as a favorite on the beer festival circuit.'
@@ -1088,17 +1110,17 @@ const storyData = {
   merchant: {
     title: 'Hop Merchant & Marketing & Media Relations',
     subtitle: 'BC Hop\nJan 2017 - Jan 2019',
-    topImage: 'images/story_3_1.jpg',
+    galleryImages: ['images/story_3_1.jpg', 'images/story_3_2.jpg'],
     firstPara: 'Building on existing relationships with breweries, and using a client centred sales approach, Donna worked with new CRM software to develop a database of 500 leads in nine months and sold hops to over 100 new accounts. She attended tradeshows, delivered hops during harvest and facilitated creative industry collaboration to further brand awareness for BC Hop Co.',
     moreParagraphs: [
       'Donna was asked to organize a collaboration between Phillips Brewing & Malting (BC brewery that malts their own barley), BC Hop Co (growing and processing BC hops) and Tap & Barrel (BC restaurant group that supports using local ingredients). The launch of Lumberjack beer was attended by Minister of Agriculture, Lana Popham, generated media attention and led to increased sales of Lumberjack hops!'
     ],
-    bottomImages: ['images/story_3_2.jpg']
+    bottomImages: []
   },
   fortlangley: {
     title: 'Event Producer',
     subtitle: 'Fort Langley Beer & Food Festival\nNovember 2016 to May 2017',
-    topImage: 'images/story_4_1.jpg',
+    galleryImages: ['images/story_4_1.jpg'],
     firstPara: 'Staged at a National Historic site in a municipality that had no previous familiarity with beer festivals during one of the busiest weekends of the year, this new event was a test for Donna\'s expertise in handling logistics. Working with the team at Trading Post, she handled all marketing and promotion initiatives, attracted and managed 19 sponsor relationships, recruited vendors, and coordinated onsite management.',
     moreParagraphs: [
       'Using any measurement of success for a new event, the Fort Langley Beer + Food Festival was an unprecedented success. Blessed by the first sunny May long weekend in 20 years, 1500 tickets were sold in advance, 40 vendors participated, sponsors and community partners were engaged which totally fulfilled the Trading Post mandate to Tap into the Local!'
@@ -1108,12 +1130,12 @@ const storyData = {
   chilliwack: {
     title: 'Inaugural Executive Director, CHHCF',
     subtitle: 'November 2011 to\nFebruary, 2014',
-    topImage: 'images/story_5_1.jpg',
+    galleryImages: ['images/story_5_1.jpg', 'images/story_5_2.jpg'],
     firstPara: 'Two years after launch, CHHCF had more than 50 organizations actively engaged, boasted several successful financial partnerships, and was running two successful programs. The Healthy Kids Initiative and an innovative pilot project with the Chilliwack Division of Family Practice were underway to bring a healthy living message to community stakeholders that engage with children, including regular family physician practice.',
     moreParagraphs: [
       'The organization was officially launched at a public relations event with all marketing materials including website in place in less than six months. Donna also secured funding and support from the Chilliwack Division of Family Practice and the SCOPE Program (a project of the UBC Department of Pediatrics, BC Children\'s Hospital and the Childhood Obesity Foundation).'
     ],
-    bottomImages: ['images/story_5_2.jpg']
+    bottomImages: []
   }
 };
 
@@ -1131,8 +1153,19 @@ function renderStory(key) {
   const story = storyData[key];
   if (!story) return;
   let html = '<div class="story-header"><h3>' + story.title + '</h3><div class="story-subtitle">' + story.subtitle.replace(/\n/g, '<br>') + '</div></div>';
-  if (story.topImage) {
-    html += '<div class="story-body-row"><img src="' + story.topImage + '" alt=""><p>' + story.firstPara + '</p></div>';
+  if (story.galleryImages && story.galleryImages.length > 0) {
+    html += '<div class="story-body-row">';
+    if (story.galleryImages.length === 1) {
+      html += '<img src="' + story.galleryImages[0] + '" alt="" style="width:210px;height:auto;flex-shrink:0">';
+    } else {
+      html += '<div class="story-gallery" data-gallery="' + key + '">';
+      story.galleryImages.forEach(function(src, i) {
+        html += '<img src="' + src + '" alt="" style="display:' + (i === 0 ? 'block' : 'none') + '" data-gal-idx="' + i + '">';
+      });
+      html += '<div class="story-gallery-nav"><button onclick="galNav(\'' + key + '\',-1)">&#10094;</button><button onclick="galNav(\'' + key + '\',1)">&#10095;</button></div>';
+      html += '</div>';
+    }
+    html += '<p>' + story.firstPara + '</p></div>';
   } else {
     html += '<div class="story-full-text"><p>' + story.firstPara + '</p></div>';
   }
@@ -1146,6 +1179,17 @@ function renderStory(key) {
   }
   document.getElementById('storyContent').innerHTML = html;
   document.getElementById('storyModal').scrollTop = 0;
+}
+
+var galIndexes = {};
+function galNav(key, dir) {
+  var gallery = document.querySelector('[data-gallery="' + key + '"]');
+  if (!gallery) return;
+  var imgs = gallery.querySelectorAll('img');
+  if (!galIndexes[key]) galIndexes[key] = 0;
+  imgs[galIndexes[key]].style.display = 'none';
+  galIndexes[key] = (galIndexes[key] + dir + imgs.length) % imgs.length;
+  imgs[galIndexes[key]].style.display = 'block';
 }
 
 function navStory(dir) {
