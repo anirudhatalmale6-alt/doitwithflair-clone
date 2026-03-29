@@ -1076,43 +1076,43 @@ const storyData = {
   },
   bchop: {
     title: 'Event Producer',
-    subtitle: 'BC Hop Co 2015 to 2017',
-    topImage: '',
-    firstPara: 'With just 53 days to pull it off, Donna created and produced the first BC Hop Fest in 2015. The objectives were clear - build important relationships to establish brand awareness within the craft beer industry. Donna went on to produce BeerBQ and BC Hop Fest in 2016, and BC Hop Fest in 2017.',
+    subtitle: 'BC Hop Co.\nAugust 2015 to Jan 2019',
+    topImage: 'images/story_2_1.jpg',
+    firstPara: 'As a new business, BC Hop Co approached Flair to produce a fresh hop beer festival on their farm in the Fraser Valley. With just 53 days from the first meeting to event execution, and no previous experience in the craft beer industry, Donna took on the challenge, achieved every objective outlined in the contract, and exceeded expectations for business development.',
     moreParagraphs: [
-      'Each event grew in attendance and sponsor participation, establishing BC Hop Co as a key player in the BC craft beer community. From securing venues and managing logistics to coordinating sponsors and vendors, Donna delivered memorable events that exceeded client expectations and built lasting industry relationships.'
+      'Capitalizing on her existing relationships and quickly creating new ones in the craft beer community, Donna recruited 17 craft breweries to participate, developed and executed 11 sponsorship agreements, generated extensive media coverage and 800 people attended the event. Three years later, the event tripled sponsorship, hosted 42 craft breweries, attracted 1500 attendees and was established as a favorite on the beer festival circuit.'
     ],
-    bottomImages: []
+    bottomImages: ['images/story_2_2.jpg']
   },
   merchant: {
-    title: 'Hop Merchant/Marketing and Media Relations',
-    subtitle: 'BC Hop Co',
-    topImage: '',
-    firstPara: 'BC Hop Co asked Flair to expand the scope of the contract to include marketing and promotion and work as a sales rep for the first processed hops that would be ready for distribution in March 2017.',
+    title: 'Hop Merchant & Marketing & Media Relations',
+    subtitle: 'BC Hop\nJan 2017 - Jan 2019',
+    topImage: 'images/story_3_1.jpg',
+    firstPara: 'Building on existing relationships with breweries, and using a client centred sales approach, Donna worked with new CRM software to develop a database of 500 leads in nine months and sold hops to over 100 new accounts. She attended tradeshows, delivered hops during harvest and facilitated creative industry collaboration to further brand awareness for BC Hop Co.',
     moreParagraphs: [
-      'Donna helped create a sales process, built a database of customers and then introduced BC Hop Co hops to brewers across the country. The result was significant brand awareness growth and new distribution channels for locally grown BC hops.'
+      'Donna was asked to organize a collaboration between Phillips Brewing & Malting (BC brewery that malts their own barley), BC Hop Co (growing and processing BC hops) and Tap & Barrel (BC restaurant group that supports using local ingredients). The launch of Lumberjack beer was attended by Minister of Agriculture, Lana Popham, generated media attention and led to increased sales of Lumberjack hops!'
     ],
-    bottomImages: []
+    bottomImages: ['images/story_3_2.jpg']
   },
   fortlangley: {
-    title: 'Sponsorship Lead, Event Producer',
-    subtitle: 'Fort Langley Beer + Food Festival',
-    topImage: '',
-    firstPara: 'In the fall of 2016, Flair was hired by Trading Post Brewing Company to execute their vision for a brand new event to be held at the Fort Langley National Historic Site that would celebrate local food, beer and the history of the region.',
+    title: 'Event Producer',
+    subtitle: 'Fort Langley Beer & Food Festival\nNovember 2016 to May 2017',
+    topImage: 'images/story_4_1.jpg',
+    firstPara: 'Staged at a National Historic site in a municipality that had no previous familiarity with beer festivals during one of the busiest weekends of the year, this new event was a test for Donna\'s expertise in handling logistics. Working with the team at Trading Post, she handled all marketing and promotion initiatives, attracted and managed 19 sponsor relationships, recruited vendors, and coordinated onsite management.',
     moreParagraphs: [
-      'Donna secured sponsors, managed vendor relationships, and coordinated all aspects of event production. The festival became a celebrated annual event connecting the community with local craft breweries and food producers in the historic Fort Langley setting.'
+      'Using any measurement of success for a new event, the Fort Langley Beer + Food Festival was an unprecedented success. Blessed by the first sunny May long weekend in 20 years, 1500 tickets were sold in advance, 40 vendors participated, sponsors and community partners were engaged which totally fulfilled the Trading Post mandate to Tap into the Local!'
     ],
-    bottomImages: []
+    bottomImages: ['images/story_4_2.jpg']
   },
   chilliwack: {
-    title: 'Chilliwack Hospital & Health Care Foundation',
-    subtitle: 'CHHCF',
-    topImage: '',
-    firstPara: 'Donna was tasked with a mandate to set up and administrate a brand new organization, facilitate the development of a brand identity, engage community in a unique mandate around health promotion and implement a comprehensive marketing and communication strategy.',
+    title: 'Inaugural Executive Director, CHHCF',
+    subtitle: 'November 2011 to\nFebruary, 2014',
+    topImage: 'images/story_5_1.jpg',
+    firstPara: 'Two years after launch, CHHCF had more than 50 organizations actively engaged, boasted several successful financial partnerships, and was running two successful programs. The Healthy Kids Initiative and an innovative pilot project with the Chilliwack Division of Family Practice were underway to bring a healthy living message to community stakeholders that engage with children, including regular family physician practice.',
     moreParagraphs: [
-      'Under Donna\'s leadership, the foundation established strong community ties and developed programs that promoted health awareness and prevention across the Chilliwack region.'
+      'The organization was officially launched at a public relations event with all marketing materials including website in place in less than six months. Donna also secured funding and support from the Chilliwack Division of Family Practice and the SCOPE Program (a project of the UBC Department of Pediatrics, BC Children\'s Hospital and the Childhood Obesity Foundation).'
     ],
-    bottomImages: []
+    bottomImages: ['images/story_5_2.jpg']
   }
 };
 
@@ -1129,7 +1129,7 @@ function openStory(key) {
 function renderStory(key) {
   const story = storyData[key];
   if (!story) return;
-  let html = '<div class="story-header"><h3>' + story.title + '</h3><div class="story-subtitle">' + story.subtitle + '</div></div>';
+  let html = '<div class="story-header"><h3>' + story.title + '</h3><div class="story-subtitle">' + story.subtitle.replace(/\n/g, '<br>') + '</div></div>';
   if (story.topImage) {
     html += '<div class="story-body-row"><img src="' + story.topImage + '" alt=""><p>' + story.firstPara + '</p></div>';
   } else {
