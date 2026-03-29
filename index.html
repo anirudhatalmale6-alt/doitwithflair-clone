@@ -156,6 +156,9 @@ body {
 .intro-text .brush-swirl {
   width: 180px;
   margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .intro-text p {
   font-family: 'Lato', sans-serif;
@@ -163,6 +166,7 @@ body {
   font-size: 21px;
   line-height: 1.8;
   color: #1B222F;
+  text-align: center;
 }
 
 /* BRUSH STROKE DIVIDER */
@@ -542,7 +546,7 @@ body {
   display: none;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.5);
   z-index: 2000;
   justify-content: center;
   align-items: center;
@@ -552,55 +556,98 @@ body {
 }
 .story-modal {
   background: #fff;
-  max-width: 850px;
-  width: 90%;
-  max-height: 85vh;
+  max-width: 920px;
+  width: 92%;
+  max-height: 88vh;
   overflow-y: auto;
   position: relative;
-  padding: 50px 45px;
+  padding: 40px 40px 30px;
 }
 .story-modal-close {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
+  top: 12px;
+  right: 16px;
+  font-size: 26px;
   cursor: pointer;
   background: none;
   border: none;
   color: #333;
   line-height: 1;
+  z-index: 1;
 }
-.story-modal h3 {
+.story-header {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.story-header h3 {
   font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: 700;
-  font-size: 22px;
-  color: #2D2E2D;
-  margin-bottom: 4px;
-}
-.story-modal .story-subtitle {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
   font-size: 20px;
-  color: #555;
-  margin-bottom: 20px;
+  color: #2D2E2D;
+  flex: 1;
 }
-.story-modal p {
+.story-header .story-subtitle {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 17px;
-  line-height: 1.8;
+  font-size: 18px;
+  color: #2D2E2D;
+  flex: 1;
+  text-align: right;
+}
+.story-body-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+.story-body-row img {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+}
+.story-body-row p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #2D2E2D;
+  margin: 0;
+}
+.story-full-text p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.7;
   color: #2D2E2D;
   margin-bottom: 15px;
 }
-.story-modal .story-images {
+.story-bottom-images {
   display: flex;
   gap: 15px;
-  margin: 20px 0;
-  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.story-modal .story-images img {
-  max-width: 48%;
+.story-bottom-images img {
+  flex: 1;
+  max-width: 50%;
   height: auto;
+  object-fit: cover;
+}
+.story-nav-arrow {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 10px 15px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.story-nav-arrow:hover {
+  opacity: 1;
 }
 
 /* MOBILE RESPONSIVE */
@@ -731,11 +778,6 @@ body {
     <p>As the founder of Flair, Donna Dixson brings integrity, authenticity and enthusiasm to every project. Detail oriented and results driven, she brings marketing savvy, creativity and a commitment to alignment into the challenging world of effective sponsorship relationships. Donna's extensive network of trusted colleagues add extra value, talent and experience to her work with clients.</p>
   </div>
 </section>
-
-<!-- DIVIDER -->
-<div class="divider">
-  <img src="images/img_003.png" alt="">
-</div>
 
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portfolio">
@@ -1012,10 +1054,12 @@ document.querySelectorAll('.header nav a').forEach(a => {
 
 <!-- STORY MODALS -->
 <div class="story-modal-overlay" id="storyOverlay" onclick="closeStory(event)">
+  <button class="story-nav-arrow story-nav-prev" onclick="event.stopPropagation();navStory(-1)">&#10094;</button>
   <div class="story-modal" id="storyModal">
     <button class="story-modal-close" onclick="closeStory()">&times;</button>
     <div id="storyContent"></div>
   </div>
+  <button class="story-nav-arrow story-nav-next" onclick="event.stopPropagation();navStory(1)">&#10095;</button>
 </div>
 
 <script>
@@ -1023,64 +1067,89 @@ const storyData = {
   vmf: {
     title: 'Sponsors & Partnerships',
     subtitle: 'Vancouver Mural Festival January 2019 to June 2020',
-    text: [
-      'Donna was thrilled to join the amazing group of change makers responsible for the Vancouver Mural Festival. Working closely with the Executive team, Donna was able to build upon previous relationships, secure new partners, develop systems, execute contracts, schedule meetings, identify opportunities, prepare presentations, and conduct follow up.',
+    topImage: 'images/story_vmf_1.jpg',
+    firstPara: 'Donna was thrilled to join the amazing group of change makers responsible for the Vancouver Mural Festival. Working closely with the Executive team, Donna was able to build upon previous relationships, secure new partners, develop systems, execute contracts, schedule meetings, identify opportunities, prepare presentations, and conduct follow up.',
+    moreParagraphs: [
       'To ensure promised outcomes were achieved, Donna prioritized effective and consistent communication with sponsors and the VMF team. VMF and Flair entered into a new contract immediately after VMF 2019 with big plans for the 5th Anniversary in 2020. New colleague Lauren Welland and I started working together in early January and were well on the way to reaching very ambitious sales objectives for the year. Just prior to Covid decimating the event industry, 30% of the sponsorship agreements needed for 2020 were ready for signature with 20 NEW additional partners engaged and ready to move forward.'
     ],
-    images: ['images/story_vmf_1.jpg', 'images/story_vmf_2.jpg']
+    bottomImages: ['images/story_vmf_2.jpg']
   },
   bchop: {
-    title: 'BC Hop Co Event Producer',
-    subtitle: 'Event Producer 2015 to 2017',
-    text: [
-      'With just 53 days to pull it off, Donna created and produced the first BC Hop Fest in 2015. The objectives were clear - build important relationships to establish brand awareness within the craft beer industry.',
-      'Donna went on to produce BeerBQ and BC Hop Fest in 2016, and BC Hop Fest in 2017. Each event grew in attendance and sponsor participation, establishing BC Hop Co as a key player in the BC craft beer community.'
+    title: 'Event Producer',
+    subtitle: 'BC Hop Co 2015 to 2017',
+    topImage: '',
+    firstPara: 'With just 53 days to pull it off, Donna created and produced the first BC Hop Fest in 2015. The objectives were clear - build important relationships to establish brand awareness within the craft beer industry. Donna went on to produce BeerBQ and BC Hop Fest in 2016, and BC Hop Fest in 2017.',
+    moreParagraphs: [
+      'Each event grew in attendance and sponsor participation, establishing BC Hop Co as a key player in the BC craft beer community. From securing venues and managing logistics to coordinating sponsors and vendors, Donna delivered memorable events that exceeded client expectations and built lasting industry relationships.'
     ],
-    images: []
+    bottomImages: []
   },
   merchant: {
-    title: 'BC Hop Co Hop Merchant',
-    subtitle: 'Marketing and Media Relations',
-    text: [
-      'BC Hop Co asked Flair to expand the scope of the contract to include marketing and promotion and work as a sales rep for the first processed hops that would be ready for distribution in March 2017.',
+    title: 'Hop Merchant/Marketing and Media Relations',
+    subtitle: 'BC Hop Co',
+    topImage: '',
+    firstPara: 'BC Hop Co asked Flair to expand the scope of the contract to include marketing and promotion and work as a sales rep for the first processed hops that would be ready for distribution in March 2017.',
+    moreParagraphs: [
       'Donna helped create a sales process, built a database of customers and then introduced BC Hop Co hops to brewers across the country. The result was significant brand awareness growth and new distribution channels for locally grown BC hops.'
     ],
-    images: []
+    bottomImages: []
   },
   fortlangley: {
     title: 'Sponsorship Lead, Event Producer',
     subtitle: 'Fort Langley Beer + Food Festival',
-    text: [
-      'In the fall of 2016, Flair was hired by Trading Post Brewing Company to execute their vision for a brand new event to be held at the Fort Langley National Historic Site that would celebrate local food, beer and the history of the region.',
-      'Donna secured sponsors, managed vendor relationships, and coordinated all aspects of event production. The festival became a celebrated annual event connecting the community with local craft breweries and food producers.'
+    topImage: '',
+    firstPara: 'In the fall of 2016, Flair was hired by Trading Post Brewing Company to execute their vision for a brand new event to be held at the Fort Langley National Historic Site that would celebrate local food, beer and the history of the region.',
+    moreParagraphs: [
+      'Donna secured sponsors, managed vendor relationships, and coordinated all aspects of event production. The festival became a celebrated annual event connecting the community with local craft breweries and food producers in the historic Fort Langley setting.'
     ],
-    images: []
+    bottomImages: []
   },
   chilliwack: {
     title: 'Chilliwack Hospital & Health Care Foundation',
     subtitle: 'CHHCF',
-    text: [
-      'Donna was tasked with a mandate to set up and administrate a brand new organization, facilitate the development of a brand identity, engage community in a unique mandate around health promotion and implement a comprehensive marketing and communication strategy.',
+    topImage: '',
+    firstPara: 'Donna was tasked with a mandate to set up and administrate a brand new organization, facilitate the development of a brand identity, engage community in a unique mandate around health promotion and implement a comprehensive marketing and communication strategy.',
+    moreParagraphs: [
       'Under Donna\'s leadership, the foundation established strong community ties and developed programs that promoted health awareness and prevention across the Chilliwack region.'
     ],
-    images: []
+    bottomImages: []
   }
 };
 
+const storyKeys = ['vmf', 'bchop', 'merchant', 'fortlangley', 'chilliwack'];
+let currentStoryIndex = 0;
+
 function openStory(key) {
-  const story = storyData[key];
-  if (!story) return;
-  let html = '<h3>' + story.title + '</h3>';
-  html += '<div class="story-subtitle">' + story.subtitle + '</div>';
-  if (story.images.length) {
-    html += '<div class="story-images">';
-    story.images.forEach(src => { html += '<img src="' + src + '" alt="">'; });
-    html += '</div>';
-  }
-  story.text.forEach(p => { html += '<p>' + p + '</p>'; });
-  document.getElementById('storyContent').innerHTML = html;
+  currentStoryIndex = storyKeys.indexOf(key);
+  renderStory(key);
   document.getElementById('storyOverlay').classList.add('active');
   document.body.style.overflow = 'hidden';
+}
+
+function renderStory(key) {
+  const story = storyData[key];
+  if (!story) return;
+  let html = '<div class="story-header"><h3>' + story.title + '</h3><div class="story-subtitle">' + story.subtitle + '</div></div>';
+  if (story.topImage) {
+    html += '<div class="story-body-row"><img src="' + story.topImage + '" alt=""><p>' + story.firstPara + '</p></div>';
+  } else {
+    html += '<div class="story-full-text"><p>' + story.firstPara + '</p></div>';
+  }
+  html += '<div class="story-full-text">';
+  story.moreParagraphs.forEach(function(p) { html += '<p>' + p + '</p>'; });
+  html += '</div>';
+  if (story.bottomImages.length) {
+    html += '<div class="story-bottom-images">';
+    story.bottomImages.forEach(function(src) { html += '<img src="' + src + '" alt="">'; });
+    html += '</div>';
+  }
+  document.getElementById('storyContent').innerHTML = html;
+  document.getElementById('storyModal').scrollTop = 0;
+}
+
+function navStory(dir) {
+  currentStoryIndex = (currentStoryIndex + dir + storyKeys.length) % storyKeys.length;
+  renderStory(storyKeys[currentStoryIndex]);
 }
 
 function closeStory(e) {
@@ -1091,6 +1160,10 @@ function closeStory(e) {
 
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') closeStory();
+  if (document.getElementById('storyOverlay').classList.contains('active')) {
+    if (e.key === 'ArrowLeft') navStory(-1);
+    if (e.key === 'ArrowRight') navStory(1);
+  }
 });
 </script>
 
