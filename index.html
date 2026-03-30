@@ -1287,6 +1287,10 @@ function renderStory(key) {
     story.bottomImages.forEach(function(src) { html += '<img src="' + src + '" alt="">'; });
     html += '</div>';
   }
+  if (story.quote) {
+    html += '<div class="story-quote"><p>' + story.quote + '</p>';
+    html += '<div class="quote-attribution">- ' + story.quoteAttribution.replace(/\n/g, '<br>') + '</div></div>';
+  }
   document.getElementById('storyContent').innerHTML = html;
   document.getElementById('storyModal').scrollTop = 0;
 }
