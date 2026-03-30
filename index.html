@@ -595,10 +595,10 @@ body {
   line-height: 1.4;
 }
 .story-header .story-subtitle {
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  color: #555;
+  font-size: 16px;
+  color: #2D2E2D;
   line-height: 1.5;
 }
 .story-inline-images {
@@ -671,6 +671,71 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+.story-quote {
+  margin-top: 30px;
+  padding: 20px 30px;
+  text-align: center;
+}
+.story-quote p {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #2D2E2D;
+  margin-bottom: 15px;
+}
+.story-quote .quote-attribution {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #2D2E2D;
+  text-align: center;
+}
+.story-bio {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 25px;
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+.story-bio img {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+}
+.story-bio-text h4 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #2D2E2D;
+  margin-bottom: 2px;
+}
+.story-bio-text .bio-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+.story-bio-text p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #2D2E2D;
+}
+.story-bio-logo {
+  text-align: center;
+  margin-top: 15px;
+}
+.story-bio-logo img {
+  width: 140px;
+  height: auto;
 }
 .story-nav-arrow {
   background: none;
@@ -1109,8 +1174,9 @@ const storyData = {
     moreParagraphs: [
       'To ensure promised outcomes were achieved, Donna prioritized effective and consistent communication with sponsors and the VMF team. VMF and Flair entered into a new contract immediately after VMF 2019 with big plans for the 5th Anniversary in 2020. New colleague Lauren Welland and I started working together in early January and were well on the way to reaching very ambitious sales objectives for the year. Just prior to Covid decimating the event industry, 30% of the sponsorship agreements needed for 2020 were ready for signature with 20 NEW additional partners engaged and ready to move forward.'
     ],
-    bottomImages: ['images/story_vmf_2.jpg'],
-    inlineImages: []
+    bottomImages: ['images/story_vmf_3.jpg', 'images/story_vmf_2.jpg'],
+    quote: '"Working with VMF, particularly Donna and team, has been a pleasure. Donna listened to what we were seeking to achieve and supported us in thinking outside the box. We didn\'t want to come on board as a traditional sponsor and through the \'Run the Murals\' series we did just that. The VMF team was creative, hard working, and exemplified what a strong partnership team can accomplish."',
+    quoteAttribution: 'Diana Etherington\nNational Community Manager\nMEC'
   },
   bchop: {
     title: 'Event Producer',
@@ -1122,7 +1188,8 @@ const storyData = {
       'Capitalizing on her existing relationships and quickly creating new ones in the craft beer community, Donna recruited 17 craft breweries to participate, developed and executed 11 sponsorship agreements, generated extensive media coverage and 800 people attended the event. Three years later, the event tripled sponsorship, hosted 42 craft breweries, attracted 1500 attendees and was established as a favorite on the beer festival circuit.'
     ],
     bottomImages: ['images/story_2_2.jpg'],
-    inlineImages: []
+    quote: '"Working with Donna and the team at Vancouver Mural Festival made our involvement with the festival smooth, inspired and productive. With a hands-on approach, I felt supported through the process of creation and execution of our activation. Donna brings an effervescent attitude to her work and treats each interaction with intention. Her attention to detail and follow-through was essential to the realization of our project. We have worked with VMF for two festivals, and look forward to a third in 2020."',
+    quoteAttribution: 'Brianna Locke,\nRegional Coordinator \u2013 Public Engagement and Awareness\nWorld Vision Canada'
   },
   merchant: {
     title: 'Hop Merchant &amp; Marketing &amp; Media Relations',
@@ -1133,8 +1200,9 @@ const storyData = {
     moreParagraphs: [
       'Donna was asked to organize a collaboration between Phillips Brewing & Malting (BC brewery that malts their own barley), BC Hop Co (growing and processing BC hops) and Tap & Barrel (BC restaurant group that supports using local ingredients). The launch of Lumberjack beer was attended by Minister of Agriculture, Lana Popham, generated media attention and led to increased sales of Lumberjack hops!'
     ],
-    bottomImages: ['images/story_3_3.jpg'],
-    inlineImages: []
+    bottomImages: ['images/story_3_mid.jpg'],
+    quote: '"Creative, inspiring and original are three words that come to mind when I think of Donna. Filled with passion and energy, I first met Donna as Barkerville Bella and that was just the tip of the talent iceberg! It\'s one thing to think up a marketing campaign, it\'s another to star in it and be completely responsible for driving results based on your active performance for 10,000 km! Congrats - you are awesome."',
+    quoteAttribution: 'Nancy Arsenault\nTourism Cafe Canada Managing Partner & "Experience Gal"'
   },
   fortlangley: {
     title: 'Event Producer',
@@ -1145,7 +1213,8 @@ const storyData = {
       'Using any measurement of success for a new event, the Fort Langley Beer + Food Festival was an unprecedented success. Blessed by the first sunny May long weekend in 20 years, 1500 tickets were sold in advance, 40 vendors participated, sponsors and community partners were engaged which totally fulfilled the Trading Post mandate to Tap into the Local!'
     ],
     bottomImages: ['images/story_4_2.jpg'],
-    inlineImages: []
+    quote: '"Our club participates in numerous rugby tournaments around the world annually. Without any hesitation I can say the Abbotsford 7\'s Rugby Tournament in which Donna Dixson and her Flair team (including Sarah Campbell along with Katrina and Rachel Bernard) were the main organizers/managers was the most efficiently operated. No detail was left undone by these consummate professionals."',
+    quoteAttribution: 'Karl Fix\nPresident, Dog River Howlers Rugby Club'
   },
   chilliwack: {
     title: 'Inaugural Executive Director, CHHCF',
@@ -1156,8 +1225,9 @@ const storyData = {
     moreParagraphs: [
       'Two years after launch, CHHCF had more than 50 organizations actively engaged, boasted several successful financial partnerships, and was running two successful programs. The Healthy Kids Initiative and an innovative pilot project with the Chilliwack Division of Family Practice were underway to bring a healthy living message to community stakeholders that engage with children, including regular family physician practice.'
     ],
-    bottomImages: ['images/story_5_3.jpg'],
-    inlineImages: []
+    bottomImages: ['images/story_5_mid.jpg'],
+    quote: '"The energy and enthusiasm that Donna applies to her work is positively motivating and surpassed only by her commitment to success. Working with Donna is always a positive and professional experience."',
+    quoteAttribution: 'Ken Becotte\nExecutive Director, Oscar BC'
   }
 };
 
@@ -1207,6 +1277,16 @@ function renderStory(key) {
     story.bottomImages.forEach(function(src) { html += '<img src="' + src + '" alt="">'; });
     html += '</div>';
   }
+  if (story.quote) {
+    html += '<div class="story-quote"><p>' + story.quote + '</p>';
+    html += '<div class="quote-attribution">- ' + story.quoteAttribution.replace(/\n/g, '<br>') + '</div></div>';
+  }
+  html += '<div class="story-bio">';
+  html += '<img src="images/donna_bio.jpg" alt="Donna Dixson">';
+  html += '<div class="story-bio-text"><h4>Donna Dixson</h4><div class="bio-title">Flair Founder</div>';
+  html += '<p>As the oldest of three children in a military family, Donna has always been outgoing and a natural leader. After a brief run as a TV news anchor, she bid farewell to the city and settled on a quintessential farm in rural Saskatchewan. There she raised four daughters, ran a successful bed and breakfast operation and organized her first major event, the Biggest Family Reunion in Saskatchewan. Donna\'s focus for the past 20 years has been to say "yes" to as many exciting opportunities as possible. She brings a broad network of friends and colleagues into everything she does and is passionate about living with purpose and integrity.</p>';
+  html += '</div></div>';
+  html += '<div class="story-bio-logo"><img src="images/flair_logo.png" alt="Flair"></div>';
   document.getElementById('storyContent').innerHTML = html;
   document.getElementById('storyModal').scrollTop = 0;
 }
