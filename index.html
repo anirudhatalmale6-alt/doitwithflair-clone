@@ -672,6 +672,15 @@ body {
   height: auto;
   display: block;
 }
+.story-bottom-inline {
+  display: flex;
+  gap: 10px;
+}
+.story-bottom-inline img {
+  width: 50%;
+  flex: 1;
+  object-fit: cover;
+}
 .story-quote {
   margin-top: 30px;
   padding: 20px 30px;
@@ -1273,20 +1282,11 @@ function renderStory(key) {
     html += '</div>';
   }
   if (story.bottomImages && story.bottomImages.length > 0) {
-    html += '<div class="story-bottom-images">';
+    var cls = story.bottomImages.length > 1 ? 'story-bottom-images story-bottom-inline' : 'story-bottom-images';
+    html += '<div class="' + cls + '">';
     story.bottomImages.forEach(function(src) { html += '<img src="' + src + '" alt="">'; });
     html += '</div>';
   }
-  if (story.quote) {
-    html += '<div class="story-quote"><p>' + story.quote + '</p>';
-    html += '<div class="quote-attribution">- ' + story.quoteAttribution.replace(/\n/g, '<br>') + '</div></div>';
-  }
-  html += '<div class="story-bio">';
-  html += '<img src="images/donna_bio.jpg" alt="Donna Dixson">';
-  html += '<div class="story-bio-text"><h4>Donna Dixson</h4><div class="bio-title">Flair Founder</div>';
-  html += '<p>As the oldest of three children in a military family, Donna has always been outgoing and a natural leader. After a brief run as a TV news anchor, she bid farewell to the city and settled on a quintessential farm in rural Saskatchewan. There she raised four daughters, ran a successful bed and breakfast operation and organized her first major event, the Biggest Family Reunion in Saskatchewan. Donna\'s focus for the past 20 years has been to say "yes" to as many exciting opportunities as possible. She brings a broad network of friends and colleagues into everything she does and is passionate about living with purpose and integrity.</p>';
-  html += '</div></div>';
-  html += '<div class="story-bio-logo"><img src="images/flair_logo.png" alt="Flair"></div>';
   document.getElementById('storyContent').innerHTML = html;
   document.getElementById('storyModal').scrollTop = 0;
 }
